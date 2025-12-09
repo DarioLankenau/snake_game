@@ -1,9 +1,10 @@
 {
   "buildCommand": "",
   "outputDirectory": "build/web",
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!assets/|canvaskit/|icons/|.*\\.js$|.*\\.wasm$|.*\\.json$|.*\\.png$|.*\\.ico$|favicon\\.png).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
