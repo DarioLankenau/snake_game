@@ -1,13 +1,18 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "build/web",
-  "cleanUrls": true,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "build/web/**",
+      "use": "@vercel/static"
     }
   ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "outputDirectory": "build/web",
   "headers": [
     {
       "source": "/main.dart.js",
